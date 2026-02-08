@@ -1,0 +1,27 @@
+.partners {
+    background-color: white;
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.heading {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-2xl);
+    opacity: 0.6;
+}
+
+.logoPlaceholder {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-icon);
+}

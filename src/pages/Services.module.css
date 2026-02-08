@@ -1,0 +1,85 @@
+.hero {
+    background-color: var(--color-background);
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+}
+
+.title {
+    font-family: var(--font-family-heading);
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    color: var(--color-text-main);
+    margin-bottom: var(--spacing-sm);
+}
+
+.cardDesc {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-lg);
+    flex-grow: 1;
+}
+
+.cardFooter {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: 600;
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+
+.cta {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    color: white;
+    font-family: var(--font-family-heading);
+    margin-bottom: var(--spacing-sm);
+}
+
+.cta p {
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,112 @@
+.services {
+    background-color: var(--color-background);
+}
+
+.header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-xl);
+}
+
+.heading {
+    font-family: var(--font-family-heading);
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.subheading {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 4px solid transparent;
+}
+
+.card:hover {
+    border-top-color: var(--color-primary);
+}
+
+.iconWrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-main);
+    margin-bottom: var(--spacing-md);
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.cardDesc {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-lg);
+    flex-grow: 1;
+}
+
+.learnMore {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.card:hover .learnMore {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.actions {
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.benefits {
+    margin: 1rem 0;
+    padding-left: 1.2rem;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.benefits li {
+    margin-bottom: 0.4rem;
+}
+
+.audience {
+    font-size: 0.85rem;
+    color: var(--color-primary);
+    font-weight: 500;
+}
