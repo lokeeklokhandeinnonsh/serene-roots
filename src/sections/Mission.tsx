@@ -7,7 +7,7 @@ import styles from './Mission.module.css';
 import { websiteContent } from '../constants/websiteContent';
 
 const Mission: React.FC = () => {
-    const { overview, philosophy, mission } = websiteContent.about;
+    const { overview, philosophy } = websiteContent.about;
 
     return (
         <section className={`section ${styles.mission}`}>

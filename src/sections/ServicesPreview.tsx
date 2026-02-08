@@ -19,7 +19,7 @@ import styles from './ServicesPreview.module.css';
 import { websiteContent } from '../constants/websiteContent';
 
 /* Map service titles to icons */
-const iconMap: Record<string, JSX.Element> = {
+const iconMap: Record<string, React.ReactNode> = {
     'Therapy Services': <User size={32} />,
     'Parent Counseling': <Users size={32} />,
     'Prenatal Workshops': <Baby size={32} />,
