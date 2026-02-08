@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from './Button';
 import styles from './Navbar.module.css';
@@ -8,7 +8,6 @@ import logo from '../assets/serene_roots_logo.png';
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const location = useLocation();
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -25,7 +24,7 @@ const Navbar: React.FC = () => {
         <nav className={styles.navbar}>
             <div className={`container ${styles.navContainer}`}>
                 <Link to="/" className={styles.logo}>
-                
+
                     <img src={logo} alt="Serene Roots" className={styles.logoImage} />
                     Serene Roots
                 </Link>
@@ -33,15 +32,19 @@ const Navbar: React.FC = () => {
                 {/* Desktop Menu */}
                 <div className={styles.desktopMenu}>
                     {navLinks.map((link) => (
-                        <Link
+                        <NavLink
                             key={link.name}
                             to={link.path}
-                            className={`${styles.navLink} ${location.pathname === link.path ? styles.active : ''}`}
+                            className={({ isActive }) =>
+                                `${styles.navLink} ${isActive ? styles.active : ''}`
+                            }
                         >
                             {link.name}
-                        </Link>
+                        </NavLink>
                     ))}
-                    <Button size="sm" variant="primary">Book Appointment</Button>
+                    <Link to="/contact">
+                        <Button size="sm" variant="primary">Book Appointment</Button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -53,17 +56,21 @@ const Navbar: React.FC = () => {
                 {isOpen && (
                     <div className={styles.mobileMenu}>
                         {navLinks.map((link) => (
-                            <Link
+                            <NavLink
                                 key={link.name}
                                 to={link.path}
-                                className={styles.mobileLink}
+                                className={({ isActive }) =>
+                                    `${styles.mobileLink} ${isActive ? styles.active : ''}`
+                                }
                                 onClick={toggleMenu}
                             >
                                 {link.name}
-                            </Link>
+                            </NavLink>
                         ))}
                         <div style={{ marginTop: '1rem' }}>
-                            <Button size="md" variant="primary" onClick={toggleMenu}>Book Appointment</Button>
+                            <Link to="/contact" onClick={toggleMenu}>
+                                <Button size="md" variant="primary">Book Appointment</Button>
+                            </Link>
                         </div>
                     </div>
                 )}

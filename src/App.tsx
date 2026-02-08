@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect, Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './sections/Footer';
@@ -11,6 +11,7 @@ const Leadership = lazy(() => import('./pages/Leadership'));
 const Workshops = lazy(() => import('./pages/Workshops'));
 const Contact = lazy(() => import('./pages/Contact'));
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 // ScrollToTop component
 const ScrollToTop = () => {
@@ -36,7 +37,7 @@ const Loading = () => (
 
 function App() {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Navbar />
       <main style={{ minHeight: 'calc(100vh - 80px - 300px)' }}>
@@ -49,11 +50,12 @@ function App() {
             <Route path="/leadership" element={<Leadership />} />
             <Route path="/workshops" element={<Workshops />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </main>
       <Footer />
-    </Router>
+    </>
   );
 }
 

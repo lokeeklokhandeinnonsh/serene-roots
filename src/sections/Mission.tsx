@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import Button from '../components/Button';
@@ -60,9 +61,11 @@ const Mission: React.FC = () => {
                     </p>
 
                     {/* CTA */}
-                    <Button variant="primary" size="md">
-                        Learn More About Us
-                    </Button>
+                    <Link to="/about">
+                        <Button variant="primary" size="md">
+                            Learn More About Us
+                        </Button>
+                    </Link>
 
                 </motion.div>
             </div>

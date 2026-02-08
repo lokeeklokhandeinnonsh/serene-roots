@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../components/Button';
 import styles from './Hero.module.css';
@@ -30,13 +31,17 @@ const Hero: React.FC = () => {
 
                         {/* Actions */}
                         <div className={styles.actions}>
-                            <Button size="lg" variant="primary">
-                                {hero.ctaPrimary}
-                            </Button>
+                            <Link to="/contact">
+                                <Button size="lg" variant="primary">
+                                    {hero.ctaPrimary}
+                                </Button>
+                            </Link>
 
-                            <Button size="lg" variant="outline">
-                                {hero.ctaSecondary}
-                            </Button>
+                            <Link to="/services">
+                                <Button size="lg" variant="outline">
+                                    {hero.ctaSecondary}
+                                </Button>
+                            </Link>
                         </div>
                     </motion.div>
                 </div>
