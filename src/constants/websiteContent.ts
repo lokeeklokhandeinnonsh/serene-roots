@@ -338,19 +338,19 @@ export const websiteContent = {
             {
                 quote:
                     "Serene Roots helped me find the clarity I needed during a difficult transition. The compassionate approach made all the difference.",
-                author: "Sarah J.",
+                author: "Shweta Tiwari",
                 role: "Individual Therapy",
             },
             {
                 quote:
                     "The parenting workshop was an eye-opener. I feel more connected to my children and more confident in my parenting.",
-                author: "Michael T.",
+                author: "Sanket Patil",
                 role: "Parenting Workshop",
             },
             {
                 quote:
                     "A truly safe harbor. My anxiety has become manageable, and I've learned tools that I use every day.",
-                author: "Elena R.",
+                author: "Jitendra Deshpande",
                 role: "Mindfulness Coaching",
             },
         ],
