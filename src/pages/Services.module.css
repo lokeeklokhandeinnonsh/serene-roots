@@ -1,6 +1,6 @@
 .hero {
     background-color: var(--color-background);
-    padding: var(--spacing-2xl) 0;
+    padding: 4rem 0 2rem;
     text-align: center;
 }
 
@@ -81,5 +81,11 @@
 @media (min-width: 1024px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 2.5rem 0 1.5rem;
     }
 }

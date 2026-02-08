@@ -1,6 +1,6 @@
 .hero {
     background-color: var(--color-background);
-    padding: var(--spacing-2xl) 0;
+    padding: 4rem 0 2rem;
     text-align: center;
 }
 
@@ -150,5 +150,11 @@
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 2.5rem 0 1.5rem;
     }
 }
