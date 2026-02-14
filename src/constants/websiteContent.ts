@@ -58,20 +58,29 @@ export const websiteContent = {
         subheading: "Experienced professionals dedicated to ethical and effective care.",
         profiles: [
             {
-                name: "Shriya Deshpande",
-                role: "Founder & Therapist",
-                qualifications: "MA in Clinical Psychology",
+                name: "Shriya Priya Jitendra Deshpande",
+                role: "Founder, Therapist",
+                qualifications: [
+                    "MA Clinical Psychology",
+                    "Diploma in Mindfulness",
+                    "PGDBA HR",
+                    "Prenatal Counselor",
+                    "ABA Therapy Specialist",
+                ],
                 bio: "As the driving force behind Serene Roots, Shriya combines her expertise in child development and behavioral science to build child-centric therapeutic services. She champions early identification and collaborative care involving parents and educators.",
                 quote: "Every child deserves to be understood, not just labeled.",
-                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" // Placeholder
+                image: "/shriya.jpeg"
             },
             {
-                name: "Nisarga Dongare",
-                role: "Executive Head & Therapist",
-                qualifications: "MA in Industrial Psychology",
+                name: "Nisarga V Dongare",
+                role: "Co-Founder, Therapist",
+                qualifications: [
+                    "MA Industrial Psychology",
+                    "PGDBA HR",
+                ],
                 bio: "Bridging therapy expertise with operational leadership, Nisarga ensures all services remains practical and ethical. Her hands-on experience in emotional regulation and parent guidance drives the center's effective interventions.",
                 quote: "Practical support transforms family dynamics.",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" // Placeholder
+                image: "/nisha.jpeg"
             },
         ],
     },

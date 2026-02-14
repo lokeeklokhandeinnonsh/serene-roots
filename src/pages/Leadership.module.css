@@ -73,10 +73,18 @@
     margin-bottom: var(--spacing-md);
 }
 
-.qualifications {
+.qualificationsList {
     font-size: 0.95rem;
     color: var(--color-text-muted);
     margin-bottom: var(--spacing-lg);
+    padding-left: 1.2rem;
+    /* Indent for bullets */
+    list-style-type: disc;
+    text-align: left;
+}
+
+.qualificationsList li {
+    margin-bottom: 0.25rem;
 }
 
 .quoteBox {

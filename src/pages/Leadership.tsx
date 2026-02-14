@@ -67,9 +67,11 @@ const Leadership: React.FC = () => {
 
                                 <div className={styles.divider}></div>
 
-                                <p className={styles.qualifications}>
-                                    {member.qualifications}
-                                </p>
+                                <ul className={styles.qualificationsList}>
+                                    {(member.qualifications as string[]).map((qual, i) => (
+                                        <li key={i}>{qual}</li>
+                                    ))}
+                                </ul>
 
                                 <div className={styles.quoteBox}>
                                     <p>
