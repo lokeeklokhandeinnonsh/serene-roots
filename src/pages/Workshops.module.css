@@ -25,74 +25,51 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
     margin-bottom: var(--spacing-xl);
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+/* Poster Card */
+.posterCard {
     position: relative;
+    cursor: pointer;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.dateBadge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: var(--color-accent);
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius-full);
-    font-size: 0.85rem;
+.posterCard:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-lg);
+}
+
+.posterImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    color: white;
+    text-align: center;
     font-weight: 600;
-    color: var(--color-text-main);
-    width: fit-content;
-    margin-bottom: var(--spacing-md);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.cardTitle {
-    font-size: 1.5rem;
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-xs);
+.posterCard:hover .overlay {
+    opacity: 1;
 }
 
-.time {
-    font-weight: 500;
-    color: var(--color-text-muted);
-    margin-bottom: var(--spacing-md);
-}
-
-.desc {
-    color: var(--color-text-muted);
-    font-size: 0.95rem;
-    margin-bottom: var(--spacing-lg);
-    flex-grow: 1;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid var(--color-border);
-    padding-top: var(--spacing-md);
-}
-
-.status {
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.open {
-    color: var(--color-primary);
-}
-
-.filling {
-    color: #DD6B20;
-    /* Orange for urgency */
-}
-
+/* Brochure Section */
 .brochureSection {
     background-color: var(--color-surface);
 }
@@ -125,27 +102,7 @@
     color: var(--color-primary);
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-md);
-}
-
-.galleryPlaceholder {
-    background-color: #E2E8F0;
-    height: 200px;
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-text-muted);
-}
-
 @media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .brochureBox {
         flex-direction: row;
         justify-content: space-between;

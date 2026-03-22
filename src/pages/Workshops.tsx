@@ -1,28 +1,28 @@
 import React from 'react';
-import Card from '../components/Card';
+import { useNavigate } from 'react-router-dom';
+import { Download } from 'lucide-react';
 import Button from '../components/Button';
-import { Calendar, Download } from 'lucide-react';
 import SEO from '../components/SEO';
 import styles from './Workshops.module.css';
 
 const workshops = [
     {
-        title: "Mindfulness for Beginners",
-        date: "March 15, 2024",
-        time: "10:00 AM - 2:00 PM",
-        desc: "Learn the basics of mindfulness meditation and how to integrate it into your daily life to reduce stress.",
-        status: "Open"
+        id: 1,
+        image: '/poster1.jpeg',
+        title: 'Summer Workshop',
+        link: '/contact'
     },
     {
-        title: "Positive Parenting Tools",
-        date: "April 5, 2024",
-        time: "1:00 PM - 4:00 PM",
-        desc: "Practical strategies for parents to build better connection and communication with their children.",
-        status: "Filling Fast"
+        id: 2,
+        image: '/poster2.jpeg',
+        title: 'Little Friends Camp',
+        link: '/contact'
     }
 ];
 
 const Workshops: React.FC = () => {
+    const navigate = useNavigate();
+
     return (
         <div className={styles.workshopsPage}>
             <SEO
@@ -39,22 +39,21 @@ const Workshops: React.FC = () => {
             <section className="section container">
                 <h2 className={styles.heading}>Upcoming Events</h2>
                 <div className={styles.grid}>
-                    {workshops.map((event, index) => (
-                        <Card key={index} className={styles.card}>
-                            <div className={styles.dateBadge}>
-                                <Calendar size={18} />
-                                <span>{event.date}</span>
+                    {workshops.map((item) => (
+                        <div
+                            key={item.id}
+                            className={styles.posterCard}
+                            onClick={() => navigate(item.link)}
+                        >
+                            <img
+                                src={item.image}
+                                alt={item.title}
+                                className={styles.posterImage}
+                            />
+                            <div className={styles.overlay}>
+                                <span>Register Now</span>
                             </div>
-                            <h3 className={styles.cardTitle}>{event.title}</h3>
-                            <p className={styles.time}>{event.time}</p>
-                            <p className={styles.desc}>{event.desc}</p>
-                            <div className={styles.footer}>
-                                <span className={`${styles.status} ${event.status === 'Open' ? styles.open : styles.filling}`}>
-                                    {event.status}
-                                </span>
-                                <Button size="sm" variant="primary">Register</Button>
-                            </div>
-                        </Card>
+                        </div>
                     ))}
                 </div>
             </section>
@@ -70,17 +69,6 @@ const Workshops: React.FC = () => {
                             <Download size={20} style={{ marginRight: '0.5rem' }} /> Download PDF
                         </Button>
                     </div>
-                </div>
-            </section>
-
-            <section className="section container">
-                <h2 className={styles.heading}>Past Events Gallery</h2>
-                <div className={styles.gallery}>
-                    {[1, 2, 3].map((item) => (
-                        <div key={item} className={styles.galleryItem}>
-                            <div className={styles.galleryPlaceholder}>Event Photo {item}</div>
-                        </div>
-                    ))}
                 </div>
             </section>
         </div>
