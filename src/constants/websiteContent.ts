@@ -26,20 +26,21 @@ export const websiteContent = {
         },
         philosophy: {
             heading: "Our Philosophy",
-            content: "We believe in a strength-based, inclusive approach. By collaborating with parents, schools, and communities, we create a circle of support that nurtures confidence, resilience, and emotional health.",
+            content: "Serene Roots is a specialized therapy and counseling center dedicated to the mental and emotional well-being of children, individuals, and workplace communities. We focus on understanding underlying needs rather than labels, offering structured, evidence-based interventions in a supportive environment.\n\nOur approach is strength-based and collaborative, working closely with families, schools, and organizations to create a holistic support system. Through targeted programs and interventions, we aim to build emotional resilience, enhance well-being, and promote sustainable growth across all age groups and settings.",
         },
         vision: {
             heading: "Our Vision",
-            content: "To create a world where mental health support is emotionally strong, confident, ethical, and holistic.",
+            content: "To create a world where mental health support is holistic, ethical, and empowering, enabling children, families, and organizations to grow with confidence, resilience, and emotional well-being.",
         },
         mission: {
             heading: "Our Mission",
             points: [
-                "Support children beyond marks and behavior through comprehensive therapy.",
-                "Empower parents with clarity, guidance, and confidence.",
-                "Promote early intervention by collaborating with schools and communities.",
-                "Extend mental health support to workplaces for better work-life balance.",
-                "Support families from the very beginning with prenatal workshops.",
+                "To support children through specialized, evidence-based interventions, including ABA (Applied Behavior Analysis) and Occupational Therapy (OT), focusing on their developmental, behavioral, and emotional needs.",
+                "To work closely with students, helping them build functional skills, independence, and confidence beyond academics.",
+                "To empower parents with clarity, practical strategies, and ongoing guidance throughout their child's developmental journey.",
+                "To collaborate with schools by offering structured workshops and programs for students, teachers, and parents, promoting holistic child development and early intervention.",
+                "To extend mental health and emotional well-being support to organizations through our 7 Signature Corporate Workshops, designed to enhance resilience, communication, and workplace well-being.",
+                "To support families from the very beginning through prenatal and early parenting programs, ensuring strong emotional foundations.",
             ],
         },
         values: {
@@ -117,32 +118,11 @@ export const websiteContent = {
                 targetAudience: "Parents",
             },
             {
-                id: "prenatal-workshop",
-                title: "Prenatal Workshop",
-                description: "Emotional wellness and bonding sessions for expecting mothers and parents.",
-                benefits: ["Maternal well-being", "Early bonding", "Anxiety reduction"],
-                targetAudience: "Expecting Parents",
-            },
-            {
                 id: "school-services",
                 title: "School Services",
                 description: "Workshops and training for schools to support student development and emotional health.",
                 benefits: ["Teacher training", "Student insights", "Classroom management"],
                 targetAudience: "Schools",
-            },
-            {
-                id: "mindfulness-workshops",
-                title: "Mindfulness Workshops",
-                description: "Practices to enhance focus, emotional regulation, and self-awareness for all ages.",
-                benefits: ["Better focus", "Stress reduction", "Emotional balance"],
-                targetAudience: "All Ages",
-            },
-            {
-                id: "designing-services",
-                title: "Designing Services",
-                description: "Psychology-driven design for websites and physical spaces to enhance well-being.",
-                benefits: ["User-friendly spaces", "Enhanced productivity", "Psychological comfort"],
-                targetAudience: "Clinics & Offices",
             },
         ],
     },
@@ -152,9 +132,10 @@ export const websiteContent = {
             title: "Therapy Services",
             shortDescription: "Specialized support for children with special needs.",
             fullDescription: [
-                "At Serene Roots, we support children with special needs through ABA Therapy (Applied Behavior Analysis) and Occupational Therapy, helping them build essential life skills, improve behavior and communication, regulate emotions, and gain independence in daily life.",
-                "Our therapy focuses on attention, social skills, sensory processing, self-help abilities, emotional regulation, and functional behavior, enabling children to function more confidently at home, school, and in social environments.",
-                "Each child receives a personalized therapy plan developed through careful assessment and close collaboration with parents. By understanding the child beyond symptoms and addressing core strengths and challenges, we work from the roots to create meaningful and lasting developmental progress."
+                "At Serene Roots, our therapy focuses on attention, social skills, sensory processing, self-help abilities, emotional regulation, and functional behavior, enabling children to function more confidently at home, school, and in social environments.",
+                "Each child receives a personalized therapy plan developed through careful assessment and close collaboration with parents. By understanding the child beyond symptoms and addressing core strengths and challenges, we work from the roots to create meaningful and lasting developmental progress.",
+                "ABA Therapy: Uses structured, evidence-based techniques to improve communication, behaviour, and learning skills while reducing challenging behaviours.",
+                "Occupational Therapy (OT): Helps develop motor, sensory, and daily living skills to improve independence and participation in everyday activities."
             ],
             highlights: [
                 "Applied Behavior Analysis (ABA)",
@@ -216,24 +197,6 @@ export const websiteContent = {
             ]
         },
         {
-            id: "prenatal-workshop",
-            title: "Prenatal Workshop",
-            shortDescription: "Nurturing emotional wellness for expecting parents.",
-            fullDescription: [
-                "At Serene Roots, we believe pregnancy is not just a physical journey—it is an emotional, mental, and deeply transformative phase for both the mother and the growing life within her.",
-                "We offer preconception counseling and thoughtfully designed pregnancy wellness workshops that support expecting parents with care, awareness, and compassion. Our 5-session Pregnancy Wellness Program creates a nurturing space where mothers feel heard, supported, and emotionally prepared for motherhood.",
-                "Our sessions gently focus on understanding fetal development, using Indian music and mantras for calmness, mindfulness practices to ease anxiety, nutrition for well-being, and strengthening partner bonding.",
-                "At Serene Roots, we help parents slow down, connect inward, and build a loving foundation for their child—working from the roots to create emotional security, trust, and lasting well-being for the next generation."
-            ],
-            highlights: [
-                "Pregnancy Wellness Program",
-                "Preconception Counseling",
-                "Mindfulness for Mothers",
-                "Fetal Connection & Bonding",
-                "Partner Support"
-            ]
-        },
-        {
             id: "school-services",
             title: "School Services",
             shortDescription: "Partnerships for student well-being and teacher empowerment.",
@@ -251,41 +214,6 @@ export const websiteContent = {
                 "Early Identification"
             ]
         },
-        {
-            id: "mindfulness-workshops",
-            title: "Mindfulness Workshops",
-            shortDescription: "Cultivating focus and emotional balance.",
-            fullDescription: [
-                "Serene Roots offers mindfulness workshops for all age groups, designed to enhance focus, emotional regulation, stress management, and self-awareness.",
-                "Our age-appropriate sessions help children, adolescents, and adults develop practical tools for calming the mind, improving attention, and responding to emotions more consciously in daily life.",
-                "Rooted in evidence-informed practices and safe facilitation, our mindfulness programs support lasting emotional balance—working from the roots for sustainable well-being."
-            ],
-            highlights: [
-                "Mindfulness for Children",
-                "Stress Reduction for Adults",
-                "Focus Enhancement",
-                "Emotional Awareness",
-                "Daily Practice Tools"
-            ]
-        },
-        {
-            id: "designing-services",
-            title: "Designing Services",
-            shortDescription: "Creating psychology-driven spaces for well-being.",
-            fullDescription: [
-                "At Serene Roots, we offer psychology-driven designing services that help create websites and physical spaces aligned with human behavior, focus, and emotional well-being.",
-                "We support website design for productivity and engagement by guiding color psychology, layout flow, visual balance, and user-friendly structure—enhancing clarity, trust, and ease of navigation. Our inputs are grounded in psychological principles to improve attention, reduce cognitive overload, and create a calming user experience.",
-                "We also assist in designing people-friendly physical spaces—workspaces, therapy rooms, learning environments, and homes—based on the purpose, users, and emotional demands of the space, to support comfort, efficiency, and sustained productivity.",
-                "Serene Roots works collaboratively with web designers, architects, and interior designers, offering psychological insights that integrate seamlessly into the design process—ensuring spaces and digital platforms work with the mind, not against it."
-            ],
-            highlights: [
-                "Psychology-Driven Web Design",
-                "Interior Space Consulting",
-                "Color Psychology",
-                "User Experience (UX) Enhancements",
-                "Productivity-Focused Layouts"
-            ]
-        }
     ],
     partnerships: {
         heading: "Partner With Us",

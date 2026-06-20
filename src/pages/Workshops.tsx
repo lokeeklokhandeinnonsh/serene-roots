@@ -5,7 +5,22 @@ import Button from '../components/Button';
 import SEO from '../components/SEO';
 import styles from './Workshops.module.css';
 
-const workshops = [
+const upcomingWorkshops = [
+    {
+        id: 3,
+        image: '/poster3.jpeg',
+        title: 'Upcoming Workshop',
+        link: '/contact'
+    },
+    {
+        id: 4,
+        image: '/poster4.jpeg',
+        title: 'Upcoming Camp',
+        link: '/contact'
+    }
+];
+
+const pastWorkshops = [
     {
         id: 1,
         image: '/poster1.jpeg',
@@ -39,7 +54,7 @@ const Workshops: React.FC = () => {
             <section className="section container">
                 <h2 className={styles.heading}>Upcoming Events</h2>
                 <div className={styles.grid}>
-                    {workshops.map((item) => (
+                    {upcomingWorkshops.map((item) => (
                         <div
                             key={item.id}
                             className={styles.posterCard}
@@ -53,6 +68,24 @@ const Workshops: React.FC = () => {
                             <div className={styles.overlay}>
                                 <span>Register Now</span>
                             </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            <section className="section container" style={{ paddingTop: '0' }}>
+                <h2 className={styles.heading}>Past Events</h2>
+                <div className={styles.grid}>
+                    {pastWorkshops.map((item) => (
+                        <div
+                            key={item.id}
+                            className={styles.posterCard}
+                        >
+                            <img
+                                src={item.image}
+                                alt={item.title}
+                                className={styles.posterImage}
+                            />
                         </div>
                     ))}
                 </div>

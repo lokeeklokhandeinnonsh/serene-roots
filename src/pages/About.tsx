@@ -102,6 +102,7 @@ const About: React.FC = () => {
                                 textAlign: 'center',
                                 maxWidth: '800px',
                                 margin: '0 auto',
+                                whiteSpace: 'pre-wrap',
                             }}
                         >
                             {about.philosophy.content}

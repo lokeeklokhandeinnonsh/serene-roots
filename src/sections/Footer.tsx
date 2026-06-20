@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram } from 'lucide-react';
 import styles from './Footer.module.css';
 
 import { contactDetails } from '../constants/websiteContent';
@@ -63,10 +63,25 @@ const Footer: React.FC = () => {
                     {/* Social Media */}
                     <div className={styles.socialColumn}>
                         <h4 className={styles.heading}>Follow Us</h4>
-                        <div className={styles.socialIcons}>
-                            <a href="#" aria-label="Instagram"><Instagram size={24} /></a>
-                            <a href="#" aria-label="Facebook"><Facebook size={24} /></a>
-                            <a href="#" aria-label="Twitter"><Twitter size={24} /></a>
+                        <div className={styles.socialIcons} style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', alignItems: 'flex-start' }}>
+                            <a 
+                                href="https://www.instagram.com/sereneroots_corporate" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'inherit', textDecoration: 'none', fontSize: '0.9rem' }}
+                            >
+                                <Instagram size={20} />
+                                <span>serenroots-corporate</span>
+                            </a>
+                            <a 
+                                href="https://www.instagram.com/sereneroots_childdevelopment" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'inherit', textDecoration: 'none', fontSize: '0.9rem' }}
+                            >
+                                <Instagram size={20} />
+                                <span>sereneroots_childdevelopment</span>
+                            </a>
                         </div>
                     </div>
                 </div>
